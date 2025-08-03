@@ -3,3 +3,4 @@ export interface Stock {
     name: string;
     type: string;
 }
+

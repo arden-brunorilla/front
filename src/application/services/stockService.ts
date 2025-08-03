@@ -10,7 +10,6 @@ export async function listStocks(): Promise<Stock[]> {
     const res = await fetch(`${BASE_URL}/stocks`, {
         cache: 'no-store'
     })
-    console.log(res)
     if (!res.ok) {
         throw new Error(`Error fetching stocks: ${res.status} ${res.statusText}`)
     }
